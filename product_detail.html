@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+
+    <title> All Products-HotWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/logo.jpg" width="125px">
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a> </li>
+                    <li><a href="">products</a> </li>
+                    <li><a href="">about</a> </li>
+                    <li><a href="">contact</a> </li>
+                    <li><a href="">Account</a> </li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+
+
+    </div>
+
+    <!-- single product detail -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/gallery-1.jpg" width=100% id="ProductImg">
+            </div>
+            <div class="col-2">
+                <p>Home/Tshirt</p>
+                <h1> Red Round Neck Tshirt</h1>
+                <h4>Rs. 450.25</h4>
+                <select>
+                    <option >
+                        size
+                    </option>
+                    <option >
+                        medium
+                    </option>
+                    <option >
+                        small
+                    </option>
+                    <option >
+                       large
+                    </option></select>
+                <a href="" class="btn">Add to Cart</a>
+
+
+                <input type="number" value="1">
+            </div>
+        </div>
+    </div>
+
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+        </div>
+    </div>
+
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col4">
+                <img src="images/product-1.jpg">
+                <h4>Red Round Neck TShirt</h4>
+                <div class="rating">
+
+                </div>
+                <p>Rs. 450.25</p>
+
+            </div>
+            <div class="col4">
+                <img src="images/product-2.jpg">
+                <h4>HRX Casual Shoes</h4>
+                <div class="rating">
+
+                </div>
+                <p>Rs.1750.00</p>
+
+            </div>
+            <div class="col4">
+                <img src="images/product-3.jpg">
+                <h4>Sports Jogger</h4>
+                <div class="rating">
+
+                </div>
+                <p>Rs. 900.00</p>
+
+            </div>
+            <div class="col4">
+                <img src="images/product-4.jpg">
+                <h4>Polo TShirt</h4>
+                <div class="rating">
+
+                </div>
+                <p>Rs. 759.00</p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download app for Android and ios Mobil phones.</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>Our purpose is to sustainably make the pleasure and Benifits of Sport accessible to the many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>FAcebook</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                            <li>Twitter</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright"> @Copyright 2022-Abhishek Chandel</p>
+            </div>
+
+
+        </div>
+
+
+        <!-- JS toggle menu -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px"
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+</body>
+
+
+</html>
